@@ -12,11 +12,11 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background: linear-gradient(to right, #007bff, #416892);
+    background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-    
+    width: 25%; 
 }
 
 .col-md-9 {
@@ -24,13 +24,13 @@ body {
     
 }
 .sidebar h2 {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.7em;
     font-weight: 400;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
     transition: color 0.3s;
-    -webkit-text-stroke: 0.3px black;
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255);
 }
 
 .sidebar a i {
@@ -44,12 +44,14 @@ body {
 }
 
 .sidebar a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    display: block;
-    padding: 10px 0;
+    display: flex;
+    align-items: center; 
+    padding: 10px;
     transition: background-color 0.3s;
-    -webkit-text-stroke: 0.2px black;
+    -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+    margin-left: 10px; 
 }
 
 .sidebar a:hover {
@@ -67,9 +69,9 @@ body {
     -webkit-text-stroke: 0.5px black;
 }
 
-/* Añade este estilo para el texto de precio */
+
 .price-text {
-    color: #888; /* Color gris claro para el texto del precio */
+    color: #888; 
 }
 
 
@@ -80,14 +82,14 @@ body {
 }
 
 .card-body button {
-    border-radius: 0; /* Hace que los bordes del botón sean completamente cuadrados */
-    padding: 8px 20px; /* Ajusta el relleno del botón según sea necesario */
-    border: none; /* Elimina el borde */
+    border-radius: 0; 
+    padding: 8px 20px; 
+    border: none; 
     cursor: pointer;
-    width: 100%; /* Hace que los botones ocupen el 100% del ancho disponible */
+    width: 100%; 
 }
 
-/* Estilo para los botones cuando se pasa el ratón sobre ellos */
+
 .card-body button:hover {
     background-color: #555;
     color: #fff;
@@ -138,12 +140,12 @@ body {
 }
 
 footer {
-  background-color: #333; /* Cambia el color de fondo según tu preferencia */
-  color: #fff; /* Cambia el color del texto según tu preferencia */
-  padding: 10px 0; /* Agrega espacio interno alrededor del texto */
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px 0; 
 }
 
-/* Estiliza el texto del pie de página */
+
 footer p {
   margin: 0;
 }
