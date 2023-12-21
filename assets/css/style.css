@@ -1,0 +1,149 @@
+body {
+    font-family: "Jost", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-areas: "sidebar content";
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: linear-gradient(to right, #007bff, #416892);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.col-md-9 {
+    grid-area: content;
+    
+}
+.sidebar h2 {
+    color: #ffffff;
+    font-size: 1.7em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.sidebar a i {
+    margin-right: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+    -webkit-text-stroke: 0.2px black;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.page-title {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+}
+
+/* Añade este estilo para el texto de precio */
+.price-text {
+    color: #888; /* Color gris claro para el texto del precio */
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-body button {
+    border-radius: 0; /* Hace que los bordes del botón sean completamente cuadrados */
+    padding: 8px 20px; /* Ajusta el relleno del botón según sea necesario */
+    border: none; /* Elimina el borde */
+    cursor: pointer;
+    width: 100%; /* Hace que los botones ocupen el 100% del ancho disponible */
+}
+
+/* Estilo para los botones cuando se pasa el ratón sobre ellos */
+.card-body button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .card-deck {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .card-deck {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1em;
+    font-weight: light;
+}
+
+footer {
+  background-color: #333; /* Cambia el color de fondo según tu preferencia */
+  color: #fff; /* Cambia el color del texto según tu preferencia */
+  padding: 10px 0; /* Agrega espacio interno alrededor del texto */
+}
+
+/* Estiliza el texto del pie de página */
+footer p {
+  margin: 0;
+}
